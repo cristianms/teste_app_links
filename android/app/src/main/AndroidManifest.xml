@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.teste_app_links">
+    package="com.testedocristian.teste_app_links">
    <application
         android:label="teste_app_links"
         android:name="${applicationName}"
@@ -27,8 +27,8 @@
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="http" android:host="example.com" />
-                <data android:scheme="https" />
+                <data android:scheme="http" android:host="cristianms.github.io/teste_app_links/" />
+                <data android:scheme="https" android:host="cristianms.github.io/teste_app_links/" />
             </intent-filter>
             <!-- Alteração deep linking -->
         </activity>
