@@ -30,11 +30,13 @@ class MyMaterialApp extends StatelessWidget {
 final goRouterObj = GoRouter(
   routes: [
     GoRoute(
-      path: '/teste_app_links', // Rota inicial
+      path: '/',                              // Rota inicial
+      // path: '/teste_app_links',            // Rota inicial
       builder: (_, __) => const CustomPage(), // Redirecionamento da rota inicial
-      routes: [ // Demais rotas
-        GoRoute(path: 'page2', builder: (_, __) => const CustomPage2()),
-        GoRoute(path: 'page3', builder: (_, __) => const CustomPage3()),
+      routes: [                               // Demais rotas
+        GoRoute(path: 'teste_app_links', builder: (_, __) => const CustomPage()),
+        GoRoute(path: 'teste_app_links/page2', builder: (_, __) => const CustomPage2()),
+        GoRoute(path: 'teste_app_links/page3', builder: (_, __) => const CustomPage3()),
       ],
     ),
   ],
